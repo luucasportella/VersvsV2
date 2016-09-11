@@ -38,30 +38,116 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
     </head>
-    <body>
+    <body id="topPage">
         <!-- Header Start -->
         <header>
             <nav>
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="#" class="brand-logo">VERSVS</a>                        
-                    </div>
+                <div class="nav-wrapper">
+                    <a href="index.jsp" class="brand-logo">VERSVS</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="#">START GAME</a></li>
+                        <li><a href="">RULES</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="register.jsp">SING UP</a></li>
+                        <li><a href="login.jsp">SING IN</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
         <!-- Header Ends -->
-        
+
         <!-- Main Start -->
         <main>
+            <!-- Image Parallax Start -->
             <div class="parallax-container">
                 <div class="parallax"><img src="img/bg_parallax_01.jpg" alt=""></div>
             </div>
-            <div class="section white">
+            <!-- Image Parallax Ends -->
+
+            <!-- Game Start -->
+            <div class="section white" id="game">
                 <div class="row container">
                     <div class="col s12">
-                        <h2 class="center-align">Hello World!</h2>
-                        <a href="login.jsp"><button>Login</button></a>
-                        <a href="register.jsp"><button>Register</button></a>
+                        <h2 class="center-align">GAME</h2>
+                    </div>
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col s1"></div>
+
+                            <div class="col s4" style="height: 500px; border: 1px solid red;">
+                                <!-- Banner Image Start -->   
+                                <img src="img/bg_parallax_01.jpg" alt="" style="width: 250px" class="responsive-img"/>
+                                <!-- Banner Image Ends -->
+                                <ul>
+                                    <li><button>Title: HOMEM DE FERRO</button></li>
+                                    <li><button>Runtime: 2h 45min</button></li>
+                                    <li><button>Awards: 5 Oscars</button></li>
+                                    <li><button>Imdb Votes: 8.9</button></li>
+                                    <li><button>Meta Score: 95</button></li>
+                                </ul>
+                            </div>
+
+                            <div class="col s2"></div>
+
+                            <div class="col s4" style="height: 500px; border: 1px solid red;">
+                                <!-- Banner Image Start -->   
+                                <img src="img/bg_parallax_02.jpg" alt="" style="width: 250px" class="responsive-img"/>
+                                <!-- Banner Image Ends -->
+                                <ul>
+                                    <li><p>Title: CAPITÃO AMÉRICA</p></li>
+                                    <li><p>Runtime: 2h 15min</p></li>
+                                    <li><p>Awards: 3 Oscars</p></li>
+                                    <li><p>Imdb Votes: 7.9</p></li>
+                                    <li><p>Meta Score: 84</p></li>
+                                </ul>
+                            </div>
+
+                            <div class="col s1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Game Ends -->
+
+            <!-- Image Parallax Start -->
+            <div class="parallax-container">
+                <div class="parallax"><img src="img/bg_parallax_02.jpg" alt=""></div>
+            </div>
+            <!-- Image Parallax Ends -->
+
+            <!-- Rules Start -->
+            <div class="section white" id="rules">
+                <div class="row container">
+                    <div class="col s12">
+                        <h2 class="center-align">RULES</h2>
+                    </div>
+                    <div class="col s12">
+                        <h3>Objetivo:</h3>
+                        <p>Tomar todas as cartas do seu adversário.</p>
+                        <h3>Como Jogar:</h3>
+                        <p>Na sua vez de jogar, escolha um dos atributos da sua carta. Se o atributo por você escolhido for maior que o do adversário, você toma a carta dele e continua jogando. Se o adversário tomar sua carta, ele passa a escolher o atributo em primeiro lugar. Em caso de empate, cada um fica com a sua carta e quem tiver escolhido o último critério escolhe novamente.
+                        </p>
+                        <h3>Super Trunfo:</h3>
+                        <p>A carta Super Trunfo ganha de todas as outras, com exceção daquelas com a letra “A” (1A, 2A, 3A, 4A, 5A, 6A, 7A e 8A).</p>
+                        <h3>Fim do Jogo:</h3>
+                        <p>Vence quem tomar todas as cartas do adversário em primeiro lugar.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Rules Ends -->
+
+            <!-- Image Parallax Start -->
+            <div class="parallax-container">
+                <div class="parallax"><img src="img/bg_parallax_02.jpg" alt=""></div>
+            </div>
+            <!-- Image Parallax Ends -->
+
+            <!-- About Start -->
+            <div class="section white" id="about">
+                <div class="row container">
+                    <div class="col s12">
+                        <h2 class="center-align">ABOUT</h2>
                     </div>
                     <div class="col s12">
                         <p>
@@ -72,9 +158,30 @@
                     </div>
                 </div>
             </div>
+            <!-- About Ends -->
+
+            <!-- Image Parallax Start -->
             <div class="parallax-container">
                 <div class="parallax"><img src="img/bg_parallax_02.jpg" alt=""></div>
             </div>
+            <!-- Image Parallax Ends -->
+
+            <!-- Contact Start -->
+            <div class="section white" id="contact">
+                <div class="row container">
+                    <div class="col s12">
+                        <h2 class="center-align">CONTACT US</h2>
+                    </div>
+                    <div class="col s12">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis enim vitae tempus sollicitudin. Nam eu semper metus. Maecenas neque eros, vestibulum sit amet lectus id, bibendum accumsan orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent orci mauris, pretium ut massa nec, blandit molestie ex. Pellentesque elit libero, euismod quis lacus ut, lobortis euismod libero. Mauris ultricies ligula eget lorem efficitur, at accumsan purus commodo.
+
+                            In arcu eros, pharetra sit amet leo vitae, molestie elementum nibh. Aliquam non est tortor. Maecenas pretium fringilla massa, nec luctus ligula. Morbi ante magna, lobortis non interdum at, laoreet eget eros. Etiam placerat euismod malesuada. Aliquam erat volutpat. Praesent finibus consectetur enim, et accumsan diam consectetur vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec tempor tristique libero, eget fringilla sapien egestas in. In hac habitasse platea dictumst. Mauris rutrum libero mi, eget tincidunt elit sagittis non. Duis eget eros erat. Vestibulum posuere pharetra rhoncus. Mauris ultrices felis sit amet est maximus, at fringilla est mollis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Ends -->
         </main>
         <!-- Main Ends -->
 
@@ -105,7 +212,7 @@
             </div>
         </footer>
         <!-- Footer Ends -->
-        
+
         <!-- jQuery Materialize -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="materialize/js/materialize.min.js"></script>

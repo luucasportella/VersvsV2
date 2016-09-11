@@ -7,6 +7,10 @@ html, body{
     height: 100%;
 }
 
+h2{
+    color: #444;
+}
+
 /*Pagina Login*/
 .my_gradient{
     background: rgba(106,27,154,1);
@@ -18,8 +22,7 @@ html, body{
     background: linear-gradient(to bottom, rgba(106,27,154,1) 0%, rgba(106,27,154,1) 3%, rgba(79,195,247,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a1b9a', endColorstr='#4fc3f7', GradientType=0 );
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .login_section{
@@ -82,7 +85,14 @@ html, body{
     text-decoration: none;
     color: #fff;
     font-size: 1.3em;
-    margin-left: 70%;
+    margin-left: 15px; 
+}
+
+.forgot_pass{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    margin-left: 100px;    
 }
 
 .separa_linha{
@@ -105,14 +115,53 @@ label{
     padding: 30px;
 }
 
+.row_register{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.alredy_account{
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+}
+
+.cyan {
+    background-color: #00bcd4;
+}
+
+.btn-register{
+    background-color: #4fc3f7;
+    color: #fff;
+    width: 170px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    width: 100%;
+    height: 46px;
+}
+
+.btn-register:hover{
+    background-color: lightcyan;
+    color: lightskyblue;
+}
+
+form{
+    margin-bottom: 15px;
+}
+
 /*Parallax*/
 .parallax-container {
-      height: 350px;
-    }
+    height: 350px;
+}
 
 /*Letra do Erro da pagina error.jsp*/
 #pError {
-font-family: "Roboto", sans-serif;
-color: #fff;
-font-size: 1.3em;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 1.3em;
 }
+
+/* Index */

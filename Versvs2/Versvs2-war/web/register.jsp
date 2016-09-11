@@ -38,34 +38,20 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
     </head>
-    <body>
-        <!-- Header Start -->
-        <header>
-            <nav>
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="index.jsp" class="brand-logo">VERSVS</a>                        
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Header Ends -->
-        
+    <body class="cyan">        
         <!-- Main Starts -->
         <main>
             <div class="row">
-                <div class="col s4"></div>
-                <div class="col s4">
+                <div class="col m4"></div>
+                <div class="col m4">
                     <section>
-                        <article>
-                            <!-- Title of Page-->
-                            <h2 class="center-align">Create Account</h2>
-                        </article>
-                        <article>
-                            <div class="row">
-                                <form class="col s12" method="POST" action="Controller">
+                        <div class="row" id="login-page">
+                            <div class="col s12 z-depth-4 card-panel">
+                                <!-- Title of Page-->
+                                <h2 class="center-align">Create Account</h2>
+                                <form class="login_form col s12" method="POST" action="Controller">
                                     <!-- Form Starts-->
-                                    <div class="row">
+                                    <div class="row row_register">
                                         <div class="input-field col s6">
                                             <input type="text" name="firstname" class="validate" id="firstname" />
                                             <label for="firstname">First Name</label>
@@ -75,13 +61,13 @@
                                             <label for="lastname">Last Name</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row row_register">
                                         <div class="input-field col s12">
                                             <input type="text" name="username" class="validate" id="userversvs" />
                                             <label for="userversvs">Username</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row row_register">
                                         <div class="input-field col s6">
                                             <input type="password" name="password" class="validate" id="pass" />
                                             <label for="pass">Password</label>
@@ -91,38 +77,36 @@
                                             <label for="pass2">Confirm Password</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row row_register">
                                         <div class="input-field col s12">
                                             <input type="email" name="email" class="email validate" id="email1" />
                                             <label for="email1" data-error="wrong" data-success="right">Email</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row row_register">
                                         <div class="input-field col s12">
                                             <input type="email" name="email" class="email validate" id="email2" />
                                             <label for="email2" data-error="wrong" data-success="right">Confirm Email</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row row_register">
                                         <div class="input-field col s6">
                                             <label for="birth">Birthday</label>
                                             <input type="date" class="datepicker" id="birth" name="birthday"/>
                                         </div>
-                                        
                                     </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <input type="hidden" name="command" value="Userversvs.register" />
-                                            <input type="submit" class="waves-effect waves-light btn" name="Register" value="Register" />
-                                        </div>
-                                    </div>
+                                    <input type="hidden" name="command" value="Userversvs.register" />
+                                    <input type="submit" class="waves-effect btn btn-register" name="Register" value="Register" />
                                 </form>
                                 <!-- Form Ends -->
+                                <div class="input-group-login center-align separa_linha">
+                                    <label class="alredy_account">Already have an account? <a href="login.jsp">Login</a></label>
+                                </div>
                             </div>
-                        </article>
+                        </div>
                     </section>
                 </div>
-                <div class="col s4"></div>
+                <div class="col m4"></div>
             </div>
         </main>
         <!-- Main Ends -->

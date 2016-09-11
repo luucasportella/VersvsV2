@@ -76,10 +76,13 @@
                                     <div class="checkbox-clear">
                                         <input type="checkbox" class="filled-in" id="remember" />
                                         <label for="remember">Remember</label>
-                                        <label><a href="register.jsp" class="register">Register</a></label>
                                     </div>
                                     <button type="submit" class="btn btn_login">LOGIN</button>
                                 </form>
+                                <div class="input-group-login center-align">
+                                    <label><a href="register.jsp" class="register">Register Now!</a></label>
+                                    <label><a href="#" class="forgot_pass disabled">Forgot Password?</a></label>
+                                </div>
                             </article>
                         </div>
                     </div>
