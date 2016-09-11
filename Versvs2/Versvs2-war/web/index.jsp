@@ -49,8 +49,8 @@
                         <li><a href="">RULES</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#">CONTACT US</a></li>
-                        <li><a href="register.jsp">SING UP</a></li>
-                        <li><a href="login.jsp">SING IN</a></li>
+                        <li><a href="register.jsp">SIGN UP</a></li>
+                        <li><a href="login.jsp">SIGN IN</a></li>
                     </ul>
                 </div>
             </nav>
