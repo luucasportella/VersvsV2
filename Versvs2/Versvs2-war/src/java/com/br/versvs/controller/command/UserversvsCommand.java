@@ -111,11 +111,11 @@ public class UserversvsCommand implements Command {
                 Userversvs tempUser3 = userversvsDAO.findByUsername(username);
                 if(tempUser3 == null){
                     responsePage = "error.jsp";
-                    request.getSession().setAttribute("error", "Usuario não existe.");
+                    request.getSession().setAttribute("error", "ERRO! Usuario não existe.");
                     break;
                 } else if (!password.equals(tempUser3.getPassword())){
                     responsePage = "error.jsp";
-                    request.getSession().setAttribute("error", "Senhas incorreta.");
+                    request.getSession().setAttribute("error", "ERRO! Senha incorreta.");
                     break;
                 } else {
                     request.getSession().setAttribute("user", tempUser3); //setando o usuario na sessão

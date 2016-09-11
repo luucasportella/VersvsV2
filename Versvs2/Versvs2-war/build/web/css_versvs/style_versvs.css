@@ -109,3 +109,10 @@ label{
 .parallax-container {
       height: 350px;
     }
+
+/*Letra do Erro da pagina error.jsp*/
+#pError {
+font-family: "Roboto", sans-serif;
+color: #fff;
+font-size: 1.3em;
+}
