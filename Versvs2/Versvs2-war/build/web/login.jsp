@@ -49,7 +49,7 @@
                         <div class="col m4">
                             <article id="logo">
                                 <figure>
-                                    <img src="img/logo.png" alt="Versvs"/>
+                                    <a href="index.jsp"><img src="img/logo.png" alt="Versvs"/></a>
                                 </figure>
                             </article>
                         </div>

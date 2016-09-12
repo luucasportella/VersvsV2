@@ -124,7 +124,14 @@ public class UserversvsCommand implements Command {
                 }
                 break; //break do case login
                 
-                //TODO logout
+                
+            case "logout":
+                
+                request.getSession().setAttribute("user", null); //Limpa a sessao do usuario
+                request.getSession().setAttribute("page", null);
+                responsePage = "index.jsp";
+                
+                break;
         }
     }
 

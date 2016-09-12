@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,19 +42,29 @@
     <body id="topPage">
         <!-- Header Start -->
         <header>
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="index.jsp" class="brand-logo">VERSVS</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="#">START GAME</a></li>
-                        <li><a href="">RULES</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="register.jsp">SIGN UP</a></li>
-                        <li><a href="login.jsp">SIGN IN</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="index.jsp" class="brand-logo">VERSVS</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li class="active"><a href="#">START GAME</a></li>
+                            <li><a href="">RULES</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                                <c:choose>
+                                    <c:when test="${user==null}">
+                                    <li><a href="register.jsp">SING UP</a></li>
+                                    <li><a href="login.jsp">LOG IN</a></li>
+                                    </c:when>
+                                    <c:otherwise>
+                                    <li><a href="#">SETTINGS</a></li>
+                                    <li><a href="Controller?command=Userversvs.logout">LOG OUT</a></li>
+                                    </c:otherwise>
+                                </c:choose>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <!-- Header Ends -->
 
@@ -79,8 +90,8 @@
                                 <!-- Banner Image Start -->   
                                 <img src="img/bg_parallax_01.jpg" alt="" style="width: 250px" class="responsive-img"/>
                                 <!-- Banner Image Ends -->
-                                <ul>
-                                    <li><button>Title: HOMEM DE FERRO</button></li>
+                                <ul class="center-align">
+                                    <li><button style="width: 80%;">Title: HOMEM DE FERRO</button></li>
                                     <li><button>Runtime: 2h 45min</button></li>
                                     <li><button>Awards: 5 Oscars</button></li>
                                     <li><button>Imdb Votes: 8.9</button></li>
@@ -88,7 +99,13 @@
                                 </ul>
                             </div>
 
-                            <div class="col s2"></div>
+                            <div class="col s2">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <h2>VS</h2>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="col s4" style="height: 500px; border: 1px solid red;">
                                 <!-- Banner Image Start -->   
