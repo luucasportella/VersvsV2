@@ -45,7 +45,7 @@
             <div class="navbar-fixed">
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="index.jsp" class="brand-logo">VERSVS</a>
+                        <a href="index.jsp" class="brand-logo"><img src="img/logo_sem_escrito.png" style="width: 40px"/>VERSVS</a>
                         <ul class="right hide-on-med-and-down">
                             <li class="active"><a href="#">START GAME</a></li>
                             <li><a href="">RULES</a></li>

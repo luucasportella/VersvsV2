@@ -33,12 +33,17 @@ h2{
     width: 100%;
 }
 
+.login_form input{
+    color: #000;
+}
+
 .input_login{
     border: none;
     border-bottom: 1px solid #ccccb3;
     background: none;
     width: 100%;
     height: 46px;
+    color: #fff;
 }
 
 .span_clear{
@@ -88,13 +93,6 @@ h2{
     margin-left: 15px; 
 }
 
-.forgot_pass{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3em;
-    margin-left: 100px;    
-}
-
 .separa_linha{
     margin: 15px 0 15px 0;
 }
@@ -114,6 +112,8 @@ label{
 .form_cadastro{
     padding: 30px;
 }
+
+.form_cadastro
 
 .row_register{
     margin-left: auto;
@@ -167,4 +167,14 @@ form{
 /* Index */
 .brand-logo{
     margin-left: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+.nav {
+    background: #6a1b9a; /* Old browsers */
+background: -moz-linear-gradient(45deg, #6a1b9a 0%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #6a1b9a 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #6a1b9a 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a1b9a', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }

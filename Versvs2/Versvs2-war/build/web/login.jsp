@@ -83,7 +83,6 @@
                                 </form>
                                 <div class="input-group-login">
                                     <label><a href="register.jsp" class="register">Register Now!</a></label>
-                                    <label><a href="#" class="forgot_pass disabled">Forgot Password?</a></label>
                                 </div>
                             </article>
                         </div>

@@ -49,7 +49,7 @@
                         <div class="col m4">
                             <article id="logo">
                                 <figure>
-                                    <img src="img/logo.png" alt="Versvs"/>
+                                    <a href="index.jsp"><img src="img/logo.png" alt="Versvs"/></a>
                                 </figure>
                             </article>
                         </div>
@@ -83,7 +83,6 @@
                                 </form>
                                 <div class="input-group-login">
                                     <label><a href="register.jsp" class="register">Register Now!</a></label>
-                                    <label><a href="#" class="forgot_pass disabled">Forgot Password?</a></label>
                                 </div>
                             </article>
                         </div>
