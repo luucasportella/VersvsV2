@@ -11,6 +11,10 @@ h2{
     color: #444;
 }
 
+h3{
+    font-size: 25px;
+}
+
 /*Pagina Login*/
 .my_gradient{
     background: rgba(106,27,154,1);
@@ -171,10 +175,28 @@ form{
     font-weight: 200;
 }
 
-.nav {
+.nav-wrapper, footer{
     background: #6a1b9a; /* Old browsers */
-background: -moz-linear-gradient(45deg, #6a1b9a 0%, #7db9e8 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, #6a1b9a 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, #6a1b9a 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a1b9a', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: -moz-linear-gradient(45deg, #6a1b9a 0%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #6a1b9a 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #6a1b9a 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a1b9a', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+footer.page-footer{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.brand-logo{
+    margin-left: 2px;
+}
+
+nav img{
+    width: 42px;
+    margin: 10px 0 0 30px;
+}
+
+.parallax-first{
+    height: 700px;
 }

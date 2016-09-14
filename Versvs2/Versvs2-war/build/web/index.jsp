@@ -45,12 +45,13 @@
             <div class="navbar-fixed">
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="index.jsp" class="brand-logo"><img src="img/logo_sem_escrito.png" style="width: 40px"/>VERSVS</a>
+                        <a href="#topPage"><img src="img/logo_sem_escrito.png" alt=""/></a>
+                        <a href="#topPage" class="brand-logo">VERSVS</a>
                         <ul class="right hide-on-med-and-down">
-                            <li class="active"><a href="#">START GAME</a></li>
-                            <li><a href="">RULES</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#game">START GAME</a></li>
+                            <li><a href="#rules">RULES</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
                                 <c:choose>
                                     <c:when test="${user==null}">
                                     <li><a href="register.jsp">SING UP</a></li>
@@ -71,13 +72,13 @@
         <!-- Main Start -->
         <main>
             <!-- Image Parallax Start -->
-            <div class="parallax-container">
+            <div class="parallax-container parallax-first">
                 <div class="parallax"><img src="img/bg_parallax_01.jpg" alt=""></div>
             </div>
             <!-- Image Parallax Ends -->
 
             <!-- Game Start -->
-            <div class="section white" id="game">
+            <div id="game" class="section white">
                 <div class="row container">
                     <div class="col s12">
                         <h2 class="center-align">GAME</h2>
@@ -203,28 +204,10 @@
         <!-- Main Ends -->
 
         <!-- Footer Start -->
-        <footer class="page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
-                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <footer class="page-footer">           
             <div class="footer-copyright">
                 <div class="container">
                     © 2016 Copyright VERSVS
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
                 </div>
             </div>
         </footer>
