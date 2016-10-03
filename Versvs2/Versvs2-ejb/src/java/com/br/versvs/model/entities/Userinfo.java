@@ -148,10 +148,8 @@ public class Userinfo implements Serializable {
             return false;
         }
         Userinfo other = (Userinfo) object;
-        if ((this.idUserinfo == null && other.idUserinfo != null) || (this.idUserinfo != null && !this.idUserinfo.equals(other.idUserinfo))) {
-            return false;
-        }
-        return true;
+        return ((this.getIdUserinfo() == null && other.getIdUserinfo() != null) || (this.idUserinfo != null && !this.getIdUserinfo().equals(other.getIdUserinfo())));
+        
     }
 
     @Override
