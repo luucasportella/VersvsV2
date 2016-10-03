@@ -157,7 +157,7 @@
 
             <!-- Image Parallax Start -->
             <div class="parallax-container">
-                <div class="parallax"><img src="img/bg_parallax_02.jpg" alt=""></div>
+                <div class="parallax"><img src="img/bg_parallax_03.jpg" alt=""></div>
             </div>
             <!-- Image Parallax Ends -->
 
@@ -180,7 +180,7 @@
 
             <!-- Image Parallax Start -->
             <div class="parallax-container">
-                <div class="parallax"><img src="img/bg_parallax_02.jpg" alt=""></div>
+                <div class="parallax"><img src="img/bg_parallax_04.jpg" alt=""></div>
             </div>
             <!-- Image Parallax Ends -->
 

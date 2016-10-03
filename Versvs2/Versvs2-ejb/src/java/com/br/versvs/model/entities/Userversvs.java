@@ -113,15 +113,13 @@ public class Userversvs implements Serializable {
             return false;
         }
         Userversvs other = (Userversvs) object;
-        if ((this.idUserversvs == null && other.idUserversvs != null) || (this.idUserversvs != null && !this.idUserversvs.equals(other.idUserversvs))) {
-            return false;
-        }
-        return true;
+        return ((this.getIdUserversvs() == null && other.getIdUserversvs() != null) || (this.idUserversvs != null && !this.getIdUserversvs().equals(other.getIdUserversvs())));
+
     }
 
     @Override
     public String toString() {
         return "com.br.versvs.model.entities.Userversvs[ idUserversvs=" + idUserversvs + " ]";
     }
-    
+
 }
