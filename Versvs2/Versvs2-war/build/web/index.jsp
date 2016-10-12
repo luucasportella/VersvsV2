@@ -58,7 +58,7 @@
                                     <li><a href="login.jsp">LOG IN</a></li>
                                     </c:when>
                                     <c:otherwise>
-                                    <li><a href="#">SETTINGS</a></li>
+                                    <li id="profile"><a href="setting.jsp"><img src="img/profile.png" alt="avatar" /></a></li>
                                     <li><a href="Controller?command=Userversvs.logout">LOG OUT</a></li>
                                     </c:otherwise>
                                 </c:choose>
@@ -202,12 +202,12 @@
             <!-- Contact Ends -->
         </main>
         <!-- Main Ends -->
-
+        <a class="btn-floating btn-large waves-effect waves-light purple" id="backToTop"><i class="material-icons">call_made</i></a>
         <!-- Footer Start -->
         <footer class="page-footer">           
             <div class="footer-copyright">
                 <div class="container">
-                    © 2016 Copyright VERSVS
+                    © 2016 Copyright VERSVS                    
                 </div>
             </div>
         </footer>

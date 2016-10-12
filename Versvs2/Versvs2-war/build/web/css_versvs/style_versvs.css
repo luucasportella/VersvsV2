@@ -200,3 +200,21 @@ nav img{
 .parallax-first{
     height: 700px;
 }
+
+#profile{
+    text-transform: uppercase;
+}
+
+#profile img{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin: 17px 0 0 0;
+}
+
+.delete{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
