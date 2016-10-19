@@ -87,12 +87,12 @@
                         <div class="row">
                             <div class="col s1"></div>
 
-                            <div class="col s4" style="height: 500px; border: 1px solid red;">
+                            <div class="col s4 myCard">
+                                <!-- Filme/Serie Title -->
+                                <p class="card_title">HOMEM DE FERRO</p>
                                 <!-- Banner Image Start -->   
-                                <img src="img/bg_parallax_01.jpg" alt="" style="width: 250px" class="responsive-img"/>
-                                <!-- Banner Image Ends -->
-                                <ul class="center-align">
-                                    <li><button style="width: 80%;">Title: HOMEM DE FERRO</button></li>
+                                <img src="img/bg_parallax_01.jpg" alt="" class="responsive-img"/>
+                                <ul>
                                     <li><button>Runtime: 2h 45min</button></li>
                                     <li><button>Awards: 5 Oscars</button></li>
                                     <li><button>Imdb Votes: 8.9</button></li>
@@ -102,18 +102,18 @@
 
                             <div class="col s2">
                                 <div class="row">
-                                    <div class="col s12">
+                                    <div class="col s12 vs_position">
                                         <h2>VS</h2>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col s4" style="height: 500px; border: 1px solid red;">
-                                <!-- Banner Image Start -->   
-                                <img src="img/bg_parallax_02.jpg" alt="" style="width: 250px" class="responsive-img"/>
-                                <!-- Banner Image Ends -->
+                            <div class="col s4 myCard">
+                                <!-- Filme/Serie Name -->
+                                <p class="card_title">CAPITÃO AMÉRICA</p>
+                                <!-- Banner Image -->   
+                                <img src="img/bg_parallax_02.jpg" alt="" class="responsive-img"/>
                                 <ul>
-                                    <li><p>Title: CAPITÃO AMÉRICA</p></li>
                                     <li><p>Runtime: 2h 15min</p></li>
                                     <li><p>Awards: 3 Oscars</p></li>
                                     <li><p>Imdb Votes: 7.9</p></li>

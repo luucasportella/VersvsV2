@@ -104,6 +104,9 @@ public class UserversvsCommand implements Command {
                 break; //break do case register
 
             case "login":
+                
+                //TODO: Sesion Cookie 
+                
                 username = request.getParameter("username");
                 password = request.getParameter("password");
 

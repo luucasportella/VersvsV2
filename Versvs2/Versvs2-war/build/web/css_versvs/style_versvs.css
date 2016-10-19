@@ -218,3 +218,57 @@ nav img{
     background-color: #d9534f;
     border-color: #d9534f;
 }
+
+/* VS */
+.vs_position{
+    text-align: center;
+    margin: 120px 0 0 0;
+}
+
+.vs_position h3{
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Cards */
+.myCard{
+    border: 2px solid darkgray;    
+    height: auto;
+    padding: 10px 0 30px 0;
+    border-radius: 5px 10%;
+    background-color: #4fc3f7;
+}
+
+.myCard p.card_title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.myCard img{
+    width: 250px;
+    margin: -5px 0 0 20px;
+    border: 2px solid grey;
+}
+
+.myCard ul li p{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.myCard button{
+    margin: 5px;
+    width: 100%;
+    background-color: #fff ;
+    color: #00bcd4 ;
+    border:1px solid #fff;
+    border-radius: 10px;
+}
+
+.myCard button:hover{
+    background-color: #6a1b9a ;
+    color: #fff ;
+}

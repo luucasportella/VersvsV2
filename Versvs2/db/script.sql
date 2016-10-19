@@ -20,4 +20,4 @@ add foreign key(id_userinfo)
 references userversvs(id_userversvs)
 on delete cascade;
 
---drop table userversvs;
+-- drop table userversvs;
