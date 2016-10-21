@@ -14,7 +14,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Home - VERSVS </title>
-
         <!--Import Google Icon Font -->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Import materialize.css-->
@@ -54,7 +53,7 @@
                             <li><a href="#contact">CONTACT US</a></li>
                                 <c:choose>
                                     <c:when test="${user==null}">
-                                    <li><a href="register.jsp">SING UP</a></li>
+                                    <li><a href="register.jsp">SIGN UP</a></li>
                                     <li><a href="login.jsp">LOG IN</a></li>
                                     </c:when>
                                     <c:otherwise>

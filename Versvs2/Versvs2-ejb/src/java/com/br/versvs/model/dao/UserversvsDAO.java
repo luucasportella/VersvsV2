@@ -15,6 +15,7 @@ import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceContextType;
 import javax.persistence.Query;
+import javax.xml.registry.infomodel.User;
 
 /**
  *
@@ -72,8 +73,8 @@ public class UserversvsDAO implements GenericDAO<Userversvs>{
 
     @Override
     public void remove(Userversvs e) {
-        em.merge(e);
-        em.remove(e);
+        Userversvs u = (Userversvs) em.merge(e);
+        em.remove(u);
     }
     
 }

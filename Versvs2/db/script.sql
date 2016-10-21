@@ -21,3 +21,5 @@ references userversvs(id_userversvs)
 on delete cascade;
 
 --drop table userversvs;
+--drop table userinfo;
+--drop table userversvs;

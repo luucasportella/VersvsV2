@@ -79,10 +79,12 @@
                 <div class="col s6">
                     <h2>Change Password</h2>
                     <form action="Controller" method="POST">
+                        <input type="hidden" name="command" value="Userversvs.updatepass" />
+                        <input type="hidden" name="currentpass2" value="${user.password}"/>
+                        <input type="hidden" name="currentuser" value="${user.username}"/>
                         <input type="password" name="currentpass" class="validate" placeholder="Current Password"/>
                         <input type="password" name="newpass" class="validate" placeholder="New Password"/>
                         <input type="password" name="confirmpass" class="validate" placeholder="Confirm Password"/>
-                        <input type="hidden" name="command" value="Userversvs.updatepass" />
                         <input type="submit" class="waves-effect waves-light btn" name="UpdatePassword" value="Update Password" />
                     </form>
                 </div>
@@ -92,8 +94,9 @@
                         <h2>Delete Account</h2>
                         <p>This operation can't be undone. Are you sure you want to delete your account?</p>
                         <form action="Controller" method="POST">
-                            <input type="hidden" name="command" value="user.delete"/>
-                            <input class="delete waves-effect waves-light btn" type="submit" value="DELETE ACCOUNT"/>
+                            <input type="hidden" name="command" value="Userversvs.delete"/>
+                            <input type="hidden" name="currentuser" value="${user.idUserversvs}"/>
+                            <input class="delete waves-effect waves-light btn" type="submit" value="Delete Account"/>
                         </form>
                     </div>
                 <!-- Delete Account Ends -->
@@ -108,6 +111,8 @@
                         <!-- Form Starts-->
                         <div class="row row_register">
                             <div class="input-field col s6">
+                                <input type="hidden" name="currentuser" value="${user.idUserversvs}"/>
+                                <input type="hidden" name="command" value="Userversvs.update" />
                                 <input type="text" name="firstname" class="validate" id="firstname" disabled />
                                 <label for="firstname">${user.userinfo.firstname}</label>
                             </div>
@@ -124,13 +129,13 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input type="email" name="email" class="email validate" id="email1" />
+                                <input type="email" name="email1" class="email validate" id="email1"/>
                                 <label for="email1" data-error="wrong" data-success="right">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input type="email" name="email" class="email validate" id="email2" />
+                                <input type="email" name="email1" class="email validate" id="email2" />
                                 <label for="email2" data-error="wrong" data-success="right">Confirm Email</label>
                             </div>
                         </div>
@@ -140,7 +145,6 @@
                                 <input type="text" id="birth" name="birthday" disabled />
                             </div>
                         </div>
-                        <input type="hidden" name="command" value="Userversvs.update" />
                         <input type="submit" class="waves-effect waves-light btn" name="Update" value="Update" />
                     </form>
                 </div>

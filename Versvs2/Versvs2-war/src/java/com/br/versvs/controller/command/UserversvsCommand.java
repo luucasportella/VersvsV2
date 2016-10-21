@@ -128,8 +128,42 @@ public class UserversvsCommand implements Command {
                 request.getSession().setAttribute("user", null); //Limpa a sessao do usuario
                 request.getSession().setAttribute("page", null);
                 responsePage = "index.jsp";
-
                 break;
+                
+            case "updatepass":
+                //DONE senha da sessão = senha digitada e nova senha = nova senha 2
+                
+                String currentPassword = request.getParameter("currentpass"); //password atual digitado pelo usuario
+                String currentPasswordSession = request.getParameter("currentpass2"); //password atual na sessão
+                String newPassword = request.getParameter("newpass"); //nova senha 
+                String newPassword2 = request.getParameter("confirmpass"); //confirmação da nova senha
+                
+                String currentUsername = request.getParameter("currentuser");
+                
+                if (currentPassword.equals(currentPasswordSession) && newPassword.equals(newPassword2)) {
+                    Userversvs u = getUserversvsDAO().findByUsername(currentUsername); //procura o usuario pelo username
+                    u.setPassword(newPassword);
+                    getUserversvsDAO().modify(u);
+                    //System.out.println(u.getPassword());
+                    request.getSession().setAttribute("user", u); //seta o usuario modificado na sessão
+                }
+                responsePage = "setting.jsp";
+                
+                break;
+            case "delete":
+                //DONE deletar a conta do usuario do banco e limpar a sessão
+                Long currentUserId = Long.parseLong(request.getParameter("currentuser"));
+                Userversvs u = getUserversvsDAO().findById(currentUserId); //procura o usuario pelo username
+                getUserversvsDAO().remove(u);
+                System.out.println("Funcionou");
+                request.getSession().setAttribute("user", null); //Limpa a sessao do usuario
+                responsePage = "index.jsp";
+                break;
+                
+            case "update":
+                //TODO atualizar email... talvez usuario "it's not a bug, it's a feature"
+                break;
+                
             default:
                 responsePage = "index.jsp";
                 break;

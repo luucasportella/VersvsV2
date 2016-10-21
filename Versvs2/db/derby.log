@@ -1,14 +1,19 @@
-Wed Oct 12 19:10:50 BRT 2016 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conex�es na porta 1527 em {3}
+Thu Oct 20 08:40:40 BRST 2016 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
 ----------------------------------------------------------------
-Wed Oct 12 19:12:49 BRT 2016:
- Inicializando o Derby vers�o The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): inst�ncia a816c00e-0157-baf2-9091-ffffb1aa0bff
-no diret�rio de banco de dados D:\Mackenzie\4_Semestre\LP3\ProjetoSemestre\Versvs2\db\versvs2db 
+Thu Oct 20 08:40:42 BRST 2016:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância a816c00e-0157-e1ad-b5dc-000052ffabac
+no diretório de banco de dados /Users/Lucas/Documents/Ciência da Computação/4o semestre/NewFolder/Projeto/Versvs2/db/versvs2db 
 
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_40-b26
-user.dir=D:\Mackenzie\glassfish4\javadb
-os.name=Windows 8.1
-os.arch=amd64
-os.version=6.3
-derby.system.home=D:\Mackenzie\4_Semestre\LP3\ProjetoSemestre\Versvs2\db
+java.runtime.version=1.8.0_31-b13
+user.dir=/Applications/NetBeans/glassfish4/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.12
+derby.system.home=/Users/Lucas/Documents/Ciência da Computação/4o semestre/NewFolder/Projeto/Versvs2/db
 Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 20 10:16:38 BRST 2016: Shutting down Derby engine
+----------------------------------------------------------------
+Thu Oct 20 10:16:38 BRST 2016:
+Encerrando a instância a816c00e-0157-e1ad-b5dc-000052ffabac
