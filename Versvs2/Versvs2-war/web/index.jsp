@@ -39,34 +39,26 @@
         <link rel="manifest" href="/manifest.json">
     </head>
     <body id="topPage">
+
         <!-- Header Start -->
-        <header>
-            <div class="navbar-fixed">
-                <nav>
-                    <div class="nav-wrapper">
-                        <a href="#topPage"><img src="img/logo_sem_escrito.png" alt=""/></a>
-                        <a href="#topPage" class="brand-logo">VERSVS</a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#game">START GAME</a></li>
-                            <li><a href="#rules">RULES</a></li>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#contact">CONTACT US</a></li>
-                                <c:choose>
-                                    <c:when test="${user==null}">
-                                    <li><a href="register.jsp">SIGN UP</a></li>
-                                    <li><a href="login.jsp">LOG IN</a></li>
-                                    </c:when>
-                                    <c:otherwise>
-                                    <li id="profile"><a href="setting.jsp"><img src="img/profile.png" alt="avatar" /></a></li>
-                                    <li><a href="Controller?command=Userversvs.logout">LOG OUT</a></li>
-                                    </c:otherwise>
-                                </c:choose>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+        <%@include file="menu.jspf" %>
         <!-- Header Ends -->
+
+        <!-- Messages Start -->
+
+        <c:if test="${user!=null}">
+            <div class="my_msg success" onload="hideAllMessages()">
+                <h3><i class="material-icons">done</i> Success!</h3>
+            </div>
+            <div class="my_msg error" onload="hideAllMessages()">
+                <h3><i class="material-icons">not_interested</i> ERROR!</h3>
+            </div>
+            <div class="my_msg warning" onload="hideAllMessages()">
+                <h3><i class="material-icons">warning</i> Warning!</h3>
+            </div>
+        </c:if>
+
+        <!-- Messages Ends -->
 
         <!-- Main Start -->
         <main>
@@ -80,49 +72,11 @@
             <div id="game" class="section white">
                 <div class="row container">
                     <div class="col s12">
-                        <h2 class="center-align">GAME</h2>
-                    </div>
+                        <h2 class="center-align">GAME</h2>                        
+                    </div>                   
                     <div class="col s12">
-                        <div class="row">
-                            <div class="col s1"></div>
-
-                            <div class="col s4" style="height: 500px; border: 1px solid red;">
-                                <!-- Banner Image Start -->   
-                                <img src="img/bg_parallax_01.jpg" alt="" style="width: 250px" class="responsive-img"/>
-                                <!-- Banner Image Ends -->
-                                <ul class="center-align">
-                                    <li><button style="width: 80%;">Title: HOMEM DE FERRO</button></li>
-                                    <li><button>Runtime: 2h 45min</button></li>
-                                    <li><button>Awards: 5 Oscars</button></li>
-                                    <li><button>Imdb Votes: 8.9</button></li>
-                                    <li><button>Meta Score: 95</button></li>
-                                </ul>
-                            </div>
-
-                            <div class="col s2">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <h2>VS</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col s4" style="height: 500px; border: 1px solid red;">
-                                <!-- Banner Image Start -->   
-                                <img src="img/bg_parallax_02.jpg" alt="" style="width: 250px" class="responsive-img"/>
-                                <!-- Banner Image Ends -->
-                                <ul>
-                                    <li><p>Title: CAPITÃO AMÉRICA</p></li>
-                                    <li><p>Runtime: 2h 15min</p></li>
-                                    <li><p>Awards: 3 Oscars</p></li>
-                                    <li><p>Imdb Votes: 7.9</p></li>
-                                    <li><p>Meta Score: 84</p></li>
-                                </ul>
-                            </div>
-
-                            <div class="col s1"></div>
-                        </div>
-                    </div>
+                        <a href="game.jsp"><button class="btn btn-flat">JOGAR</button></a>                        
+                    </div>                   
                 </div>
             </div>
             <!-- Game Ends -->
@@ -203,13 +157,7 @@
         <!-- Main Ends -->
         <a class="btn-floating btn-large waves-effect waves-light purple" id="backToTop"><i class="material-icons">call_made</i></a>
         <!-- Footer Start -->
-        <footer class="page-footer">           
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2016 Copyright VERSVS                    
-                </div>
-            </div>
-        </footer>
+        <%@include file="footer.jspf" %>
         <!-- Footer Ends -->
 
         <!-- jQuery Materialize -->
