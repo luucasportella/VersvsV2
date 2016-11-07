@@ -4,6 +4,7 @@
     Author     : fabio
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,8 +39,15 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
     </head>
-    <body class="my_gradient">
 
+    <body class="my_gradient">
+        <c:if test="${error!=null}">
+            <script type="text/javascript">
+                window.onload = function (){
+                    Materialize.toast('${error}', 50000);
+                };
+            </script>
+        </c:if>
         <div class="row">
             <div class="col m1"></div>
             <div class="col m10">

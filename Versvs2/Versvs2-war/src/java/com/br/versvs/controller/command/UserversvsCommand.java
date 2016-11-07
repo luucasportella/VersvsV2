@@ -69,15 +69,15 @@ public class UserversvsCommand implements Command {
                 Userversvs tempUser2 = getUserversvsDAO().findByEmail(email); //para checar se o email ja foi cadastrado
 
                 if (tempUser1 != null) {
-                    responsePage = "error.jsp";
+                    responsePage = "register.jsp";
                     request.getSession().setAttribute("error", "Nome de usuario ja foi cadastrado."); //nesse caso, usuario ja existe
                     break;
                 } else if (tempUser2 != null) {
-                    responsePage = "error.jsp";
+                    responsePage = "register.jsp";
                     request.getSession().setAttribute("error", "Email já cadastrado."); //nesse caso, email ja existe
                     break;
                 } else if (!password.equals(password2)) {
-                    responsePage = "error.jsp";
+                    responsePage = "register.jsp";
                     request.getSession().setAttribute("error", "Senhas digitadas não correspondem."); //nesse caso, senhas nao correspondem
                     break;
                 } else {
@@ -109,15 +109,17 @@ public class UserversvsCommand implements Command {
 
                 Userversvs tempUser3 = getUserversvsDAO().findByUsername(username);
                 if (tempUser3 == null) {
-                    responsePage = "error.jsp";
+                    responsePage = "login.jsp"; //Primeiramente utilizando error.jsp
                     request.getSession().setAttribute("error", "ERRO! Usuario não existe.");
                     break;
                 } else if (!password.equals(tempUser3.getPassword())) {
-                    responsePage = "error.jsp";
+                    responsePage = "login.jsp";
                     request.getSession().setAttribute("error", "ERRO! Senha incorreta.");
                     break;
                 } else {
                     request.getSession().setAttribute("user", tempUser3); //setando o usuario na sessão
+                    request.getSession().setAttribute("count", 0);
+                    request.getSession().setAttribute("error", null);
                     request.getSession().setAttribute("page", "home");
                     responsePage = "index.jsp";
                 }

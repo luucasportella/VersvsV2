@@ -45,19 +45,9 @@
         <!-- Header Ends -->
 
         <!-- Messages Start -->
-
-        <c:if test="${user!=null}">
-            <div class="my_msg success" onload="hideAllMessages()">
-                <h3><i class="material-icons">done</i> Success!</h3>
-            </div>
-            <div class="my_msg error" onload="hideAllMessages()">
-                <h3><i class="material-icons">not_interested</i> ERROR!</h3>
-            </div>
-            <div class="my_msg warning" onload="hideAllMessages()">
-                <h3><i class="material-icons">warning</i> Warning!</h3>
-            </div>
-        </c:if>
-
+        <a class="btn" onclick="Materialize.toast('Succes', 4000)">TESTAR Succes!!</a>
+        <a class="btn" onclick="Materialize.toast('Error', 4000)">TESTAR Error!!</a>
+        <a class="btn" onclick="Materialize.toast('Warning', 4000)">TESTAR Warning!!</a>
         <!-- Messages Ends -->
 
         <!-- Main Start -->
@@ -74,9 +64,11 @@
                     <div class="col s12">
                         <h2 class="center-align">GAME</h2>                        
                     </div>                   
-                    <div class="col s12">
-                        <a href="game.jsp"><button class="btn btn-flat">JOGAR</button></a>                        
-                    </div>                   
+                    <div class="col s5"></div>
+                    <div class="col s2">
+                        <a class="btn waves-effect btn-game" href="game.jsp">JOGAR</a>                        
+                    </div>
+                    <div class="col s5"></div>
                 </div>
             </div>
             <!-- Game Ends -->

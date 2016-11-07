@@ -4,6 +4,7 @@
     Author     : fabio
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en" class="my_gradient" >
@@ -39,6 +40,17 @@
         <link rel="manifest" href="/manifest.json">
     </head>
     <body>        
+
+        <!-- Message Error Start -->
+        <c:if test="${error!=null}">
+            <script type="text/javascript">
+                window.onload = function () {
+                    Materialize.toast('${error}', 50000);
+                };
+            </script>
+        </c:if>
+        <!-- Message Error Ends -->
+
         <!-- Main Starts -->
         <main>
             <div class="row">

@@ -12,16 +12,16 @@
                     <li><a href="#rules">RULES</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT US</a></li>
-                    <c:choose>
-                        <c:when test="${user==null}">
+                        <c:choose>
+                            <c:when test="${user==null}">
                             <li><a href="register.jsp">SIGN UP</a></li>
                             <li><a href="login.jsp">LOG IN</a></li>
-                        </c:when>
-                        <c:otherwise>
+                            </c:when>
+                            <c:otherwise>                                
                             <li id="profile"><a href="setting.jsp"><img src="img/profile.png" alt="avatar" /></a></li>
                             <li><a href="Controller?command=Userversvs.logout">LOG OUT</a></li>
-                        </c:otherwise>
-                    </c:choose>
+                            </c:otherwise>
+                        </c:choose>
                 </ul>
             </div>
         </nav>

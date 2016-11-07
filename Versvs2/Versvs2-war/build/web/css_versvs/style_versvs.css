@@ -219,6 +219,13 @@ nav img{
     border-color: #d9534f;
 }
 
+.btn-game{
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+    padding: 35px 35px 35px 35px;
+}
+
 /* Cards */
 .myCard{
     border: 2px solid darkgray;    
@@ -271,37 +278,4 @@ nav img{
 .vs_position h3{
     color: #d9534f;
     font-weight: bold;
-}
-
-/* Messages */
-.my_msg {
-    background-size: 40px 40px;
-    width: 100%;
-    border: 1px solid;
-    color: #fff;
-    padding: 15px;
-    text-shadow: 0 1px 0 rgba(0,0,0,.5);
-}
-
-.error{
-		 background-color: #de4343;
-		 border-color: #c43d3d;
-}
-		 
-.warning{
-		 background-color: #eaaf51;
-		 border-color: #d99a36;
-}
-
-.success{
-		 background-color: hsla(142, 44%, 40%, 1);
-		 border-color: hsla(142, 44%, 40%, 1);
-}
-
-.my_msg h3{
-		 margin: 0 0 5px 0;													 
-}
-
-.my_msg p{
-		 margin: 0;													 
 }
