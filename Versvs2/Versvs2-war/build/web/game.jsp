@@ -63,7 +63,7 @@
                                 <ul>
                                     <li><button>Runtime: 2h 45min</button></li>
                                     <li><button>Awards: 5 Oscars</button></li>
-                                    <li><button>Imdb Votes: 8.9</button></li>
+                                    <li><button>Imdb Rating: 8.9</button></li>
                                     <li><button>Meta Score: 95</button></li>
                                 </ul>
                             </div>
@@ -84,7 +84,7 @@
                                 <ul>
                                     <li><p>Runtime: 2h 15min</p></li>
                                     <li><p>Awards: 3 Oscars</p></li>
-                                    <li><p>Imdb Votes: 7.9</p></li>
+                                    <li><p>Imdb Rating: 7.9</p></li>
                                     <li><p>Meta Score: 84</p></li>
                                 </ul>
                             </div>
