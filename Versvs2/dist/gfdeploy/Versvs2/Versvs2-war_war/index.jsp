@@ -44,12 +44,6 @@
         <%@include file="menu.jspf" %>
         <!-- Header Ends -->
 
-        <!-- Messages Start -->
-        <a class="btn" onclick="Materialize.toast('Succes', 4000)">TESTAR Succes!!</a>
-        <a class="btn" onclick="Materialize.toast('Error', 4000)">TESTAR Error!!</a>
-        <a class="btn" onclick="Materialize.toast('Warning', 4000)">TESTAR Warning!!</a>
-        <!-- Messages Ends -->
-
         <!-- Main Start -->
         <main>
             <!-- Image Parallax Start -->
@@ -66,7 +60,7 @@
                     </div>                   
                     <div class="col s5"></div>
                     <div class="col s2">
-                        <a class="btn waves-effect btn-game" href="game.jsp">JOGAR</a>                        
+                        <a class="btn waves-effect btn-game center-align" href="game.jsp">JOGAR</a>                        
                     </div>
                     <div class="col s5"></div>
                 </div>

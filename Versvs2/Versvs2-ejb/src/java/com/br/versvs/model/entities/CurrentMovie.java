@@ -10,12 +10,12 @@ public class CurrentMovie implements Serializable {
     
     private String movie_name, awards, runtime, banner_movie;
     private int id_movie, meta_score;
-    private float imdb_rating;
+    private double imdb_rating;
 
     public CurrentMovie() {
     }
 
-    public CurrentMovie(String movie_name, String awards, String runtime, String banner_movie, int id_movie, int meta_score, float imdb_rating) {
+    public CurrentMovie(String movie_name, String awards, String runtime, String banner_movie, int id_movie, int meta_score, double imdb_rating) {
         this.movie_name = movie_name;
         this.awards = awards;
         this.runtime = runtime;
@@ -73,11 +73,11 @@ public class CurrentMovie implements Serializable {
         this.meta_score = meta_score;
     }
 
-    public float getImdb_rating() {
+    public double getImdb_rating() {
         return imdb_rating;
     }
 
-    public void setImdb_rating(float imdb_rating) {
+    public void setImdb_rating(double imdb_rating) {
         this.imdb_rating = imdb_rating;
     }
 

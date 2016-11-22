@@ -43,6 +43,10 @@
         <%@include file="menu.jspf" %>
         <!-- Header Ends -->
 
+        <c:if test="${m1==null}">
+            <c:redirect url="Controller?command=Game.search"></c:redirect>
+        </c:if>
+        
         <!-- Main Start -->
         <main>
             <!-- Game Start -->
@@ -54,20 +58,18 @@
                     <div class="col s12">
                         <div class="row">
                             <div class="col s1"></div>
-
                             <div class="col s4 myCard">
                                 <!-- Filme/Serie Title -->
-                                <p class="card_title">HOMEM DE FERRO</p>
+                                <p class="card_title">${m1.movie_name}</p>
                                 <!-- Banner Image Start -->   
-                                <img src="img/bg_parallax_01.jpg" alt="" class="responsive-img"/>
+                                <img src="${m1.banner_movie}" alt="" class="responsive-img"/>
                                 <ul>
-                                    <li><button>Runtime: 2h 45min</button></li>
-                                    <li><button>Awards: 5 Oscars</button></li>
-                                    <li><button>Imdb Rating: 8.9</button></li>
-                                    <li><button>Meta Score: 95</button></li>
+                                    <li><button class="btn waves-effect">Runtime: ${m1.runtime}</button></li>
+                                    <li><button class="btn waves-effect">Awards: ${m1.awards}</button></li>
+                                    <li><button class="btn waves-effect">Imdb Rating: ${m1.imdb_rating}</button></li>
+                                    <li><button class="btn waves-effect">Meta Score: ${m1.meta_score}</button></li>
                                 </ul>
                             </div>
-
                             <div class="col s2">
                                 <div class="row">
                                     <div class="col s12 vs_position">
@@ -77,15 +79,15 @@
                             </div>
 
                             <div class="col s4 myCard">
-                                <!-- Filme/Serie Name -->
-                                <p class="card_title">CAPITÃO AMÉRICA</p>
-                                <!-- Banner Image -->   
-                                <img src="img/bg_parallax_02.jpg" alt="" class="responsive-img"/>
+                                <!-- Filme/Serie Title -->
+                                <p class="card_title">${m2.movie_name}</p>
+                                <!-- Banner Image Start -->   
+                                <img src="${m2.banner_movie}" alt="" class="responsive-img"/>
                                 <ul>
-                                    <li><p>Runtime: 2h 15min</p></li>
-                                    <li><p>Awards: 3 Oscars</p></li>
-                                    <li><p>Imdb Rating: 7.9</p></li>
-                                    <li><p>Meta Score: 84</p></li>
+                                    <li><button class="btn disabled">Runtime: ${m2.runtime}</button></li>
+                                    <li><button class="btn disabled">Awards: ${m2.awards}</button></li>
+                                    <li><button class="btn disabled">Imdb Rating: ${m2.imdb_rating}</button></li>
+                                    <li><button class="btn disabled">Meta Score: ${m2.meta_score}</button></li>
                                 </ul>
                             </div>
 
@@ -100,7 +102,7 @@
         <!-- Footer Start -->
         <%@include file="footer.jspf" %>
         <!-- Footer Ends -->
-        
+
         <!-- jQuery Materialize -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="materialize/js/materialize.min.js"></script>

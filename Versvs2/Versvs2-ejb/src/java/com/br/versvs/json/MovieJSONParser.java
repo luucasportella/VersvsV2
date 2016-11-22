@@ -75,6 +75,9 @@ public class MovieJSONParser {
         JsonObject root = reader.readObject();
         reader.close();
         
+        CurrentMovie cm = new CurrentMovie("Filme Teste", "5", "120", "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2ODk0NDAwMF5BMl5BanBnXkFtZTcwNTM1MDc2Mw@@._V1_SX300.jpg", 1285016, 95, 7.7);
+        movies.add(cm);
+        
         return movies;
     }
 }
