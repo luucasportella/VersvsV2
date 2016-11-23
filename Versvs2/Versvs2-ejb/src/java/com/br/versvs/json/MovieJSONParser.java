@@ -44,9 +44,12 @@ public class MovieJSONParser {
 
             if (code == 407) {
                 System.out.println("Falha na autenticação do proxy");
+                return "407";
+            } else if (code == 404) {
+                System.out.println("Not Found!");
+                return "404";
             } else if (code == 200) {
-                BufferedReader br = new BufferedReader(
-                        new InputStreamReader(con.getInputStream()));
+                BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream()));
 
                 StringBuilder sb = new StringBuilder();
                 String line;
@@ -68,16 +71,23 @@ public class MovieJSONParser {
         return content;
     }
 
-    public static List<CurrentMovie> parseFeed(String content) {
-        List<CurrentMovie> movies = new ArrayList<>();
+    public static CurrentMovie parseFeed(String content) {
 
         JsonReader reader = Json.createReader(new StringReader(content));
         JsonObject root = reader.readObject();
         reader.close();
         
-        CurrentMovie cm = new CurrentMovie("Filme Teste", "5", "120", "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2ODk0NDAwMF5BMl5BanBnXkFtZTcwNTM1MDc2Mw@@._V1_SX300.jpg", 1285016, 95, 7.7);
-        movies.add(cm);
+        JsonObject mv = root.getJsonObject(content);
+        String movie_name = mv.getString("Title");
+        String awards = mv.getString("awards");
+        String runtime = mv.getString("runtime");
+        String banner_movie = mv.getString("banner_movie");
+        int id_movie = mv.getInt("id_movie");
+        int meta_score = mv.getInt("meta_score");
+        double imdb_rating = mv.getJsonNumber("imdb_rating").doubleValue();
         
-        return movies;
+        CurrentMovie cm = new CurrentMovie(movie_name, awards, runtime, banner_movie, id_movie, meta_score, imdb_rating);
+
+        return cm;
     }
 }

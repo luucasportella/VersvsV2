@@ -60,7 +60,7 @@
                     </div>                   
                     <div class="col s5"></div>
                     <div class="col s2">
-                        <a class="btn waves-effect btn-game center-align" href="game.jsp">JOGAR</a>                        
+                        <a class="btn waves-effect btn-game center-align" href="Controller?command=Game.search">JOGAR</a>                        
                     </div>
                     <div class="col s5"></div>
                 </div>

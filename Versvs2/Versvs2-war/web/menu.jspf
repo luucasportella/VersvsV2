@@ -8,7 +8,7 @@
                 <a href="index.jsp"><img src="img/logo_sem_escrito.png" alt=""/></a>
                 <a href="index.jsp" class="brand-logo">VERSVS</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="game.jsp">GAME</a></li>
+                    <li><a href="Controller?command=Game.search">GAME</a></li>
                     <li><a href="#rules">RULES</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT US</a></li>

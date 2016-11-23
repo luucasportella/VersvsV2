@@ -1,16 +1,4 @@
-Tue Nov 22 07:47:51 BRST 2016 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+Wed Nov 23 17:59:19 BRST 2016 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
 ----------------------------------------------------------------
-Tue Nov 22 07:47:53 BRST 2016:
- Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância a816c00e-0158-8b6f-14ee-ffffb1aa0bff
-no diretório de banco de dados D:\Mackenzie\4_Semestre\LP3\ProjetoSemestre\Versvs2\db\versvs2db 
-
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_40-b26
-user.dir=D:\Mackenzie\glassfish4\javadb
-os.name=Windows 8.1
-os.arch=amd64
-os.version=6.3
-derby.system.home=D:\Mackenzie\4_Semestre\LP3\ProjetoSemestre\Versvs2\db
-Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+Wed Nov 23 18:15:27 BRST 2016: Shutting down Derby engine
 ----------------------------------------------------------------
-Tue Nov 22 08:57:48 BRST 2016: Shutting down Derby engine

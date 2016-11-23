@@ -42,10 +42,6 @@
         <!-- Header Start -->
         <%@include file="menu.jspf" %>
         <!-- Header Ends -->
-
-        <c:if test="${m1==null}">
-            <c:redirect url="Controller?command=Game.search"></c:redirect>
-        </c:if>
         
         <!-- Main Start -->
         <main>
